@@ -1,7 +1,7 @@
 # An MIBLP Instance Generator 
 
 ```
-Run   : ./milpGen m n u s e d t
+Run   : ./milpGen m n u s e d t l j
 
 Output: milp_m_n_u_sedt.mps` 
         milp_m_n_u_sedt_sol.txt` (known feas sol)
@@ -16,4 +16,5 @@ Output: milp_m_n_u_sedt.mps`
 | e | sense of rhs | * 0 all 'E' <br> * 1 all 'G' <br> * 2 mixed< br> * 3 all 'L') |
 | d | dominancy strength of variables| 1 or 2 | | 
 | t | type of problem | * 0 pure <br> * 1 mixed | |
-
+| l | number of lower-level variables | |
+| j | dummy to distinguish instances | | 
