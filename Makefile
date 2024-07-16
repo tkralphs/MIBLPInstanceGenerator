@@ -20,20 +20,18 @@ CC = g++
 OPT = -g #-fPIC
 SHLINKPREFIX = -Wl,-rpath,
 
-#SYMROOT = $(HOME)/Sym-Trunk/SYMPHONY
-#COINROOT =$(HOME)/Sym-Trunk/build
+COINROOT = /home/ted/Projects/build-mibs-1.2-debug
 
-COINROOT = /home/ted/Projects/build-mibs-1.2/debug
-
-SOLINCDIR = $(COINROOT)/include/coin #$(SYMROOT)/include
+#SOLINCDIR = $(COINROOT)/include/coin #$(SYMROOT)/include
 LIBPATHS = $(COINROOT)/lib
-LPLIB = -lCoinUtils -lbz2 -lz -llapack -lblas -lm
+LPLIB = `PKG_CONFIG_PATH=$(COINROOT)/lib/pkgconfig pkg-config --libs coinutils`
 
-INCDIR        = $(addprefix -I,${SOLINCDIR})
-LDFLAGS       = $(addprefix -L,${LIBPATHS})
-LDFLAGS      += $(SYMDEFS)
+#INCDIR        = $(addprefix -I,${SOLINCDIR})
+INCDIR = `PKG_CONFIG_PATH=$(COINROOT)/lib/pkgconfig pkg-config --cflags coinutils`
+#LDFLAGS       = $(addprefix -L,${LIBPATHS})
+#LDFLAGS      += $(SYMDEFS)
 
-LINKFLAGS += $(addprefix ${SHLINKPREFIX},${LIBPATHS})
+#LINKFLAGS += $(addprefix ${SHLINKPREFIX},${LIBPATHS})
 
 EXAMPLES = milpGen
 

@@ -107,8 +107,8 @@ int main(int argc, char * argv[])
    strcpy(lowfname, "");
    sprintf(pname, "milp_%i_%i_%i_%i%i%i%i_%i", m, n, U, s_type, sense_type, 
 	   p_type, t_type, dummy);
-   sprintf(solfname, "%s_sol.txt", pname);
-   sprintf(lowfname, "%s.txt", pname);
+   sprintf(solfname, "%s.sol", pname);
+   sprintf(lowfname, "%s.aux", pname);
    sprintf(pname,"%s.mps", pname);
 
    /* first decide the number of cont variables*/
