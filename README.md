@@ -1,7 +1,8 @@
 # An MIBLP Instance Generator 
 
 Run   : `./milpGen m n u s e d t`
-Output: `milp_m_n_u_sedt.mps`
+
+Output: `milp_m_n_u_sedt.mps` <br>
         `milp_m_n_u_sedt_sol.txt` (known feas sol)
 
 
