@@ -1,12 +1,16 @@
 # An MIBLP Instance Generator 
 
-```
-Run   : ./milpGen m n u s e d t l j
+## Building on Linux
 
-Output: milp_m_n_u_sedt.mps` 
-        milp_m_n_u_sedt_sol.txt` (known feas sol)
-```
+ 1. Install [CoinUtils](https://github.com/coin-or/CoinUtils).
+ 2. Make sure you have `pkg-config`
+ 3. Edit the `Makefile` so that `COINROOT` points to the install location of CoinUtils.
+ 4. Execute `make`
 
+## Usage
+```
+./milpGen m n u s e d t l j
+```
 | argument | meaning | values | comment |
 | -------- | ------- | ------ | ------- |
 | m | number of rows(m) | > 0 | |
@@ -18,3 +22,10 @@ Output: milp_m_n_u_sedt.mps`
 | t | type of problem | 0 pure <br> 1 mixed | |
 | l | number of lower-level variables | 0 < l < m |
 | j | dummy to distinguish instances | > 0 | 
+
+Output 
+```
+milp_m_n_u_sedt_j.mps` 
+milp_m_n_u_sedt_j.sol` 
+milp_m_n_u_sedt_j.aux` 
+```
