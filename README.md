@@ -25,7 +25,7 @@
 
 Output 
 ```
-milp_m_n_u_sedt_j.mps` 
-milp_m_n_u_sedt_j.sol` 
-milp_m_n_u_sedt_j.aux` 
+milp_m_n_u_sedt_j.mps
+milp_m_n_u_sedt_j.sol 
+milp_m_n_u_sedt_j.aux 
 ```
