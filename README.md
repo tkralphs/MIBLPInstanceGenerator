@@ -1,5 +1,18 @@
 # An MIBLP Instance Generator 
 
+Author: Scott DeNegre
+
+Cite: 
+```
+@phdthesis{SDeNegre2011,
+author = {DeNegre, S.T.},
+school = {Lehigh University},
+title = {{Interdiction and Discrete Bilevel Linear Programming}},
+url = {http://coral.ie.lehigh.edu/~ted/files/papers/ScottDeNegreDissertation11.pdf},
+year = {2011}
+}
+```
+
 ## Building on Linux
 
  1. Install [CoinUtils](https://github.com/coin-or/CoinUtils).
